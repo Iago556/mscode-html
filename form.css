@@ -51,6 +51,13 @@ select {
   gap: 8px;
 }
 
+select,
+select:disabled,
+select:required:invalid {
+  background-color: #fff !important;
+  color: #333;
+}
+
 button[type="submit"] {
   background-color: #ff1616;
   color: #fff;
