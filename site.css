@@ -1,0 +1,57 @@
+* {
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 700px;
+    gap: 10px;
+}
+
+.barra-pesquisa input[type="text"] {
+    width: 450px;
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.barra-pesquisa button {
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    background: #ff1616;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.barra-pesquisa button:hover {
+    background: #cc1212;
+}
+
+ul {
+    margin: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+
+
+
+
