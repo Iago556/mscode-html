@@ -38,7 +38,7 @@ h1{
 }
 
 .barra-pesquisa button:hover {
-    background: #cc1212;
+    background:rgb(215, 8, 8);
 }
 
 ul {
@@ -72,6 +72,10 @@ li {
     gap: 20px;               /* Espaçamento entre os itens */
     justify-content: center;
 }
+
+
+
+
 
 
 
