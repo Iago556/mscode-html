@@ -1,41 +1,47 @@
 * {
 padding: 0;
-font-family: Arial, Helvetica, sans-serif;
-margin: 0;
-
+margin: 1;
+box-sizing: border-box;
 }
 
-h1{
-    text-align: flex-start;
+body {
+  margin: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 .barra-pesquisa {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    margin: 30px auto;
-    width: 100%;
-    max-width: 400px;
-    gap: 10px;
+    margin-left: 6px;
+    margin-right: auto;
+    width: 20px;
+    gap: 8px;
+   
 }
 
 .barra-pesquisa input[type="text"] {
-    width: 450px;
-    padding: 14px;
-    font-size: 20px;
+    width: 250px;
+    height: auto;
+    padding: 8px;
+    font-size: 16px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    
 }
 
 .barra-pesquisa button {
-    padding: 14px 28px;
-    font-size: 18px;
+    padding: 6px 10px;
+    font-size: 16px;
     border-radius: 6px;
     border: none;
     background: #ff1616;
     color: #fff;
     cursor: pointer;
     transition: background 0.3s;
+    margin-right: 8px;
 }
 
 .barra-pesquisa button:hover {
@@ -73,6 +79,7 @@ li {
     gap: 20px;               /* Espaçamento entre os itens */
     justify-content: center;
     list-style-type: none;
+    margin-left: 30px;
 }
 
 .icon-instagram {
@@ -94,43 +101,42 @@ header {
 
     background: #282544;
     color: #fff;
-    padding: 18px 24px;
+    padding: 16px 0px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    background: #282544;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  
 }
 
-
-header h1 {
-    margin-left: 24px;
-    font-size: 26px;
-    font-weight: bold;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-header {
-  background: #282544;
+.logo span {
+  margin-left: 32px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
   color: #fff;
-  padding: 10px 20px;
 }
 
 
-
-
-.menu-principal ul {
+.menu-principal {
   list-style-type: none;
+  justify-content: center;
   display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+
+ 
+  
 }
 
 .menu-principal a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
 }
 
 .menu-principal a:hover {
@@ -138,11 +144,14 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
+.elementos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+  
