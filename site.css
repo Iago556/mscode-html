@@ -156,6 +156,15 @@ header {
   text-decoration: underline;
 }
 
+.menu-categorias a {
+ color: black;
+ text-decoration: none;
+}
+
+.menu-categorias ul li a:hover {
+  text-decoration: underline;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
