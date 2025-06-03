@@ -1,23 +1,34 @@
 * {
 padding: 0;
-margin: 1;
+margin: 0;
 box-sizing: border-box;
 }
 
 body {
-  margin: 10;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    padding: 0;
+    padding-top: 70px; /* por que o header é fixo */
+    padding-left: 16px;
+    padding-right: 16px;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 
 .barra-pesquisa {
     display: flex;
     align-items: center;
-    margin-left: 6px;
-    margin-right: auto;
-    width: 20px;
+    margin-left: auto;
+    max-width: 300px;
+    width: 100%;
     gap: 8px;
    
 }
@@ -53,7 +64,6 @@ ul {
 }
 li {
     display: flex;
-    align-items: center;
     padding: 10px;
     
 }
@@ -61,6 +71,7 @@ li {
 .titulo {
     display: flex;
     justify-content: center;
+    margin-top: 32px;
 }
 
 .img {
@@ -74,12 +85,13 @@ li {
 .menu-principal ul {
     list-style-type: none;   /* Remove os marcadores da lista */
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: flex;           /* Coloca os <li> na horizontal */
     gap: 20px;               /* Espaçamento entre os itens */
     justify-content: center;
     list-style-type: none;
-    margin-left: 30px;
+    
+
 }
 
 .icon-instagram {
@@ -103,8 +115,7 @@ header {
     color: #fff;
     padding: 16px 0px;
     display: flex;
-    background: #282544;
-    height: 55px;
+    height: 68px;
     position: fixed;
     top: 0;
     left: 0;
@@ -127,6 +138,7 @@ header {
   justify-content: center;
   display: flex;
   margin: 0 auto;
+  flex-grow: 1;
 
  
   
@@ -136,22 +148,162 @@ header {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  text-align: center;
+  align-items: center;
+  flex: 1;
 }
 
 .menu-principal a:hover {
   text-decoration: underline;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  display: table;
+}
+
 
 .elementos-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: auto;
+  justify-content: center;
   width: 100%;
+  gap: 32px;
   padding-left: 16px;
   padding-right: 16px;
   box-sizing: border-box;
 }
+
+footer {
+    background: #282544;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0 16px 0;
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+
+footer h2 {
+  color: #fff;
+  margin: 0;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+}
+
+main, section, table, form, h2 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0;
+    border: 1px solid #e0e0e0;
+}
+
+th, td {
+    padding: 28px 10px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+
+th {
+    background: #f5f5f7;
+    font-weight: bold;
+    
+    
+}
+
+tr:last-child td {
+    border-bottom: none;
+    border-right: 1px solid #e0e0e0;
+}
+
+table img {
+    background: #e0e0e0;
+   
+}
+
+form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.botao-enviar {
+    background-color: #7b16ff;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    height: auto;
+    font-size: 16px;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #5d24b9; 
+}
+
+form.contato input:not([type="submit"]), 
+form.contato textarea {
+    display: block;
+    width: 300px;      
+    margin-bottom: 16px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.elementos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+
+}
+
+.elementos-footer p {
+    text-align: center;
+    margin-top: 16px;
+    color: #fff; 
+    font-size: 14px;
+}
+
+.elementos-footer ul {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.elementos-footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
   
+}
+
+.elementos-footer ul li a:hover {
+  text-decoration: underline;
+}
